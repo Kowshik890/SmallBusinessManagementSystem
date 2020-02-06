@@ -5,9 +5,7 @@ The functionalities of this project are:
 1. Dashboard
 1. Product Catalog Module
 		* Category Module
-				**Insert Product Category
-			**View All Product Category
-			**Update Specific Category
+				
 	* Product Module
 			*Insert Product Category
 		*View All Product Category
