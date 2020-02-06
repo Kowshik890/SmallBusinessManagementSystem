@@ -1,5 +1,5 @@
 # Small Business Management System
-### This project was developed by using ASP.NET (MVC) and SQL in Bachelor program. 
+### This project was developed by using ASP.NET (MVC) and SQL in Database System course in Bachelor program. 
 The aim of this project is to keep the detail of Product Category, Product Details, Customer Details, Supplier Details, Purchase Details and its Report. Also, store the Sales Details and its Report and lastly, Stock of the Products and its detailed Report.
 The functionalities of this project are:
 1. Dashboard
