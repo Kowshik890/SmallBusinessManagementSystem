@@ -1,0 +1,52 @@
+﻿@model RecycleBin.Models.StockViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="text-center">
+            <h4>Stock Status</h4>
+        </div>
+        
+        <div class="row">
+
+            <form method="post">
+                <input type="date" name="startDate"/>
+                <input type="date" name="endDate"/>
+                <input type="submit" name="startDate"/>
+            </form>
+
+        </div>
+        <div class="adv-table">
+            <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="myTable">
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th>Product</th>
+                        <th>Re-Order Level</th>
+                        <th>Opening Balance</th>
+                        <th>Stock In</th>
+                        <th>Stock Out</th>
+                        <th>Closing Balance</th>
+                    </tr>
+                </thead>
+                @{ int sl = 0;}
+                <tbody>
+                    @foreach (var product in Model.StockViews)
+                    {
+                    <tr>
+                        <td>@(++sl)</td>
+                        <td>@product.Product</td>
+                        <td>@product.ReOrderLevel</td>
+                        <td>@product.OpeningBalance</td>
+                        <td>@product.StockIn</td>
+                        <td>@product.StockOut</td>
+                        <td>@product.ClosingBalance</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
